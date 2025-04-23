@@ -1,0 +1,21 @@
+/* Default Light Mode */ body { background-color: #f8f9fa; color: #212529; }
+
+.navbar, .table, .btn { transition: background-color 0.3s, color 0.3s; }
+
+body.dark-mode { background-color: #121212; color: #ffffff; }
+
+body.dark-mode .navbar { background-color: #1f1f1f; }
+
+body.dark-mode .table { background-color: #2c2c2c; color: #ffffff; }
+
+body.dark-mode .btn { background-color: #343a40; color: #ffffff; }
+
+body.dark-mode input, body.dark-mode select, body.dark-mode textarea { background-color: #2c2c2c; color: #ffffff; border: 1px solid #555; }
+
+theme-toggle.js (save as theme-toggle.js):
+
+document.addEventListener("DOMContentLoaded", function () { const toggleBtn = document.getElementById("toggle-theme");
+
+// Apply theme from local storage if (localStorage.getItem("theme") === "dark") { document.body.classList.add("dark-mode"); }
+
+toggleBtn?.addEventListener("click", function () { document.body.classList.toggle("dark-mode");
