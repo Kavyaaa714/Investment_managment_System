@@ -24,6 +24,9 @@
 - **🏦 Fixed Deposit Records**
   - Record fixed deposit details including bank, amount, and maturity.
 
+- **💡 Light/Dark Mode**
+  - Toggle theme for better viewing experience.
+
 - **📱 Responsive Design**
   - Built with Bootstrap 5 for mobile and desktop compatibility.
 
@@ -47,22 +50,18 @@ Includes 4 tables:
 - `properties` — real estate assets
 - `fixed_deposits` — fixed term deposits
 
-👉 A ready-to-import `investment_schema.sql` is included.
+👉 Database name should be: `investment_system`  
+👉 Import file: `create_investment_tables.sql`
 
 ---
 
 ## 🚦 Getting Started
 
 1. Clone or download this repo.
-2. Import `investment_schema.sql` into your MySQL server.
-3. Update DB credentials in `config.php`.
-4. Start XAMPP or your PHP server and open `index.php`.
-
----
-
-## 📸 Screenshots
-
-> Add screenshots of login page, dashboard, and charts here.
+2. Create a database named `investment_system`.
+3. Import the `create_investment_tables.sql` file into your MySQL server.
+4. Update DB credentials in `config.php`.
+5. Start XAMPP or your PHP server and open `index.php`.
 
 ---
 
@@ -75,4 +74,3 @@ This project is open-source and free to use for educational or personal portfoli
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
